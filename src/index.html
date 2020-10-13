@@ -4,75 +4,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <!-- include font "Poppins" medium -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <!-- include cdn slick slider -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" />
+  <!-- include font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    crossorigin="anonymous">
+  <!-- Include style.min.css -->
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- Include jquery 3.5.1 -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <title>Renoshopbee</title>
 </head>
 
 <body>
 
   <header>
-      <div class="top-nav">
-        <ul class="top-nav__list">
-          <li class="top-nav__item">
-              <svg width="15" height="15" class="top-nav__icon" viewBox="0 0 512 512">
-                <path fill="currentColor"
-                  d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z">
-                </path>
-              </svg>
-              <a href="tel:+1123456789" class="top-nav__link top-nav__link_phone">+1 123 456 789 </a>
-          </li>
-  
-          <li class="top-nav__item">
-            <i class="top-nav__icon fas fa-envelope"></i>
-            <a href="mailto:info@company.com" class="top-nav__link top-nav__link_email">info@company.com</a> 
-          </li>
-        </ul>
-  
-        <ul class="top-nav__list">
-          <li class="top-nav__item">
-            <a class="top-nav__social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
-            <a class="top-nav__social-icon" href="#"><i class="fab fa-twitter"></i></a>
-            <a class="top-nav__social-icon" href="#"><i class="fab fa-instagram"></i></a>
-            <a class="top-nav__social-icon" href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a class="top-nav__social-icon" href="#"><i class="fab fa-behance"></i></a>
-          </li>
-        </ul>
-      </div>  
-      
-      <div class="bottom-nav">
-        <div class="logo"><span>Renoshop</span>bee</div>
-        <nav>                                  
-              <a class="bottom-nav__link" href="#">Home</a>
-              <a class="bottom-nav__link" href="#">Women</a>
-              <a class="bottom-nav__link" href="#">Men</a>
-              <a class="bottom-nav__link" href="#">Kids</a>
-              <a class="bottom-nav__link" href="#">Jewelle</a>
-              <a class="bottom-nav__link" href="#">Accessories</a>
-        </nav>
+    <div class="top-nav">
+      <ul class="top-nav__list">
+        <li class="top-nav__item">
+          <svg width="15" height="15" class="top-nav__icon" viewBox="0 0 512 512">
+            <path fill="currentColor"
+              d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z">
+            </path>
+          </svg>
+          <a href="tel:+1123456789" class="top-nav__link top-nav__link_phone">+1 123 456 789 </a>
+        </li>
 
-        <ul class="right-navbar">
-          <li class="right-navbar__item"><i class="fas fa-shopping-cart"></i></li>
-          <li class="right-navbar__item"><i class="fas fa-search"></i></li>
-          <li class="right-navbar__item"><i class="fas fa-bars"></i></li>
-        </ul>
-      </div>
+        <li class="top-nav__item">
+          <i class="top-nav__icon fas fa-envelope"></i>
+          <a href="mailto:info@company.com" class="top-nav__link top-nav__link_email">info@company.com</a>
+        </li>
+      </ul>
+
+      <ul class="top-nav__list">
+        <li class="top-nav__item">
+          <a class="top-nav__social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="top-nav__social-icon" href="#"><i class="fab fa-twitter"></i></a>
+          <a class="top-nav__social-icon" href="#"><i class="fab fa-instagram"></i></a>
+          <a class="top-nav__social-icon" href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a class="top-nav__social-icon" href="#"><i class="fab fa-behance"></i></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="bottom-nav">
+      <div class="logo"><span>Renoshop</span>bee</div>
+      <nav>
+        <a class="bottom-nav__link" href="#">Home</a>
+        <a class="bottom-nav__link" href="#">Women</a>
+        <a class="bottom-nav__link" href="#">Men</a>
+        <a class="bottom-nav__link" href="#">Kids</a>
+        <a class="bottom-nav__link" href="#">Jewelle</a>
+        <a class="bottom-nav__link" href="#">Accessories</a>
+      </nav>
+
+      <ul class="right-navbar">
+        <li class="right-navbar__item"><i class="fas fa-shopping-cart"></i></li>
+        <li class="right-navbar__item"><i class="fas fa-search"></i></li>
+        <li class="right-navbar__item"><i class="fas fa-bars"></i></li>
+      </ul>
+    </div>
   </header>
+
+  <section class="slider">
+    <div class="slider__item">
+      <h2 class="slider__title">The Best</br><span>Woocommerce</span></h2>
+      <span class="slider__desc">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</br>
+        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </span>
+      <a href="#" class="slider__link">Buy Now</a>
+      <img src="img/slide1.png" alt="slide1">
+    </div>
+
+    <div class="slider__item">
+      <h2 class="slider__title">The Best2</br><span>Woocommerce</span></h2>
+      <span class="slider__desc">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</br>
+        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </span>
+      <a href="#" class="slider__link">Buy Now</a>
+      <img src="img/slide1.png" alt="slide1">
+    </div>
+
+    <div class="slider__item">
+      <h2 class="slider__title">The Best3</br><span>Woocommerce</span></h2>
+      <span class="slider__desc">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</br>
+        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </span>
+      <a href="#" class="slider__link">Buy Now</a>
+      <img src="img/slide1.png" alt="slide1">
+    </div>
+
+  </section>
 
   <!-- all icons fontawesome -->
   <i class="fas fa-star"></i>
   <i class="far fa-star"></i>
-  
-    
+
+
   <i class="fas fa-globe-americas"></i>
   <i class="fas fa-heart"></i>
 
   <!-- social icons -->
-  
 
-  
+
+
 
   <img src="icons/repeat.png" alt="dasd">
 
@@ -94,6 +134,10 @@
     <path fill-rule="evenodd" fill="rgb(70, 70, 70)"
       d="M25.778,37.167 C25.778,37.167 26.222,34.864 23.481,32.047 C26.148,25.583 26.518,19.696 26.518,19.696 C26.518,19.696 32.000,20.783 32.000,25.455 C32.000,33.456 25.778,37.167 25.778,37.167 ZM10.666,34.359 C10.666,34.359 6.995,24.180 6.995,19.955 C6.995,18.055 7.243,16.365 7.628,14.831 L24.356,14.831 C24.744,16.366 24.993,18.058 24.993,19.957 C24.993,24.117 21.333,34.359 21.333,34.359 L10.666,34.359 ZM15.988,17.158 C14.106,17.158 12.580,18.475 12.580,20.102 C12.580,21.728 14.106,23.047 15.988,23.047 C17.869,23.047 19.395,21.728 19.395,20.102 C19.395,18.475 17.869,17.158 15.988,17.158 ZM15.254,4.009 L15.254,-0.000 L16.580,-0.000 L16.580,3.906 C18.096,4.860 22.199,7.892 24.054,13.735 L7.927,13.735 C9.719,8.054 13.624,5.054 15.254,4.009 ZM6.222,37.167 C6.222,37.167 -0.000,33.456 -0.000,25.455 C-0.000,20.783 5.481,19.696 5.481,19.696 C5.481,19.696 5.852,25.583 8.518,32.047 C5.778,34.864 6.222,37.167 6.222,37.167 ZM18.243,37.759 L17.132,36.799 L15.947,39.999 L14.539,36.799 L13.576,38.463 L12.169,35.455 L19.799,35.455 L18.243,37.759 Z" />
   </svg>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/slickSlider.js"></script>
 </body>
 
 </html>

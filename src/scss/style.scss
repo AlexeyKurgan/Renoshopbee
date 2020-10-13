@@ -1,17 +1,20 @@
-/*-- libs styles in project --*/ 
-@import 'libs/bootstrap-reboot';
-/*-- libs styles in project --*/ 
+/*-- libs styles in project --*/
+@import "libs/bootstrap-reboot";
+/*-- libs styles in project --*/
 
-/*-- base styles in project --*/ 
-@import 'base/variables';
-@import 'base/base-style';
+/*-- base styles in project --*/
+@import "base/variables";
+@import "base/base-style";
 /*-- base styles in project --*/
 
-/*-- homepage shop styles in project --*/ 
+/*-- homepage shop styles in project --*/
 
 // header
-@import 'pages/homepage-shop/header/header';
-// footer
-@import 'pages/homepage-shop/footer/footer.scss';
+@import "pages/homepage-shop/header/header";
 
-/*-- homepage shop styles in project --*/ 
+// header
+@import "pages/homepage-shop/slider/slider";
+// footer
+@import "pages/homepage-shop/footer/footer.scss";
+
+/*-- homepage shop styles in project --*/
