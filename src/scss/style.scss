@@ -8,13 +8,14 @@
 /*-- base styles in project --*/
 
 /*-- homepage shop styles in project --*/
-
-// header
-@import "pages/homepage-shop/header/header";
-
-// header
-@import "pages/homepage-shop/slider/slider";
-// footer
-@import "pages/homepage-shop/footer/footer.scss";
-
+    // header
+    @import "pages/homepage-shop/header/header";
+    // slider
+    @import "pages/homepage-shop/slider/slider";
+    // best-seller
+    @import "pages/homepage-shop/best-sellers/best-sellers";
+    // best-seller
+    @import "pages/homepage-shop/advantages/advantages";
+    // best-seller
+    @import "pages/homepage-shop/categories/categories";
 /*-- homepage shop styles in project --*/
