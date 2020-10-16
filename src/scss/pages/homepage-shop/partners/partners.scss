@@ -1,0 +1,16 @@
+.partners{
+  border:1px solid black;
+  display: flex;
+
+  &__subscribe{
+    background:center/cover no-repeat url('/img/bg.jpg');
+    color:#ffffff;
+  }
+  &__brands{
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
