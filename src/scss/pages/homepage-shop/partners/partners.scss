@@ -1,16 +1,79 @@
 .partners{
-  border:1px solid black;
   display: flex;
 
   &__subscribe{
+    width: 50%;
     background:center/cover no-repeat url('/img/bg.jpg');
     color:#ffffff;
+    padding-top: 66px;
+    padding-bottom: 64px;
+    min-height: 300px;
+
+    &-title{
+      display: block;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 600;
+      font-family: 'Poppins',sans-serif;
+    }
+
+    &-desc{
+      display: block;
+      text-align: center;
+      font-size: 14px;
+      line-height: 26px;
+      max-width: 541px;
+      margin: 0 auto;
+      padding-bottom: 35px;
+    }
+
+    &-form{
+     display: flex;
+     justify-content: center;
+
+     input{
+       text-transform: uppercase;
+       margin-right: 30px;
+       padding:18px 30px;
+       background-color:$link-color;
+       border:none;
+       font-size: 14px;
+
+       &:focus{
+        outline:1px solid $hover-link;
+       }
+     }
+    }
+
+    input[type="email"]{
+      color:#9c9c9a;
+      text-transform: initial;
+      min-width: 402px;
+    }
+    input[type="submit"]{
+      color:$link-color;
+      cursor: pointer;
+      min-width: 222px;
+      background-color:$hover-link;
+
+      &:hover{
+        transition: 0.3s ease-out all;
+        box-sizing: border-box;
+        outline:1px solid $hover-link;
+        background-color:#000000;
+        color:$hover-link;
+      }
+    }
   }
   &__brands{
-    border:1px solid black;
+    width: 50%;   
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+   
   }
 
 }
