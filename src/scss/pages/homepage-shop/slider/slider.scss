@@ -126,7 +126,8 @@ img {
 .next-arrow {
   top: 50%;
   right: 50px;
-
+  padding-right: 4px;
+  
   &:hover {
     background-color: $hover-link;
     color: $link-color;
