@@ -1,0 +1,45 @@
+.advantages{
+  padding: 0 145px 50px 145px;
+
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:hover .advantages__item-img{
+      fill: $hover-link;
+      transition: 0.2s ease-out all;
+    }
+
+    &-img-wrap{
+      margin-bottom: 22px;
+    }
+
+    &-img{
+      fill:rgb(70, 70, 70);
+    }
+    
+    &-title{
+      font-family: 'Poppins',sans-serif;
+      font-size: 19px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    &-desc{
+      // добавить шрифт [DroidSerif] regular
+      color:#888888;
+      font-size: 14px;
+    }
+  }
+
+}

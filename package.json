@@ -25,5 +25,7 @@
     "maintained node versions",
     "not dead"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "gulp-file-include": "^2.2.2"
+  }
 }

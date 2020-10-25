@@ -6,6 +6,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const htmlmin = require("gulp-htmlmin");
+const fileinclude = require("gulp-file-include");
 
 gulp.task('server', function () {
 
@@ -44,6 +45,15 @@ gulp.task('scripts', function () {
         .pipe(gulp.dest("dist/js"));
 });
 
+gulp.task('fileinclude', function(){
+    return gulp.src(['src/**/*.html'])
+    .pipe(fileinclude({
+        prefix: '@',
+        basepath: '@file'
+      }))
+      .pipe(gulp.dest('dist/'));
+})
+
 gulp.task('fonts', function () {
     return gulp.src("src/fonts/**/*")
         .pipe(gulp.dest("dist/fonts"));
@@ -60,4 +70,6 @@ gulp.task('images', function () {
         .pipe(gulp.dest("dist/img"));
 });
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles','scripts','fonts','html','icons','images'));
+
+// gulp.task('default', gulp.parallel('watch', 'server', 'styles','scripts','fonts','html','icons','images'));
+gulp.task('default', gulp.parallel('watch', 'server', 'styles','scripts','fonts','fileinclude','html','icons','images'));

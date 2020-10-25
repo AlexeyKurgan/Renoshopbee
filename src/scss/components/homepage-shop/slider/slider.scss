@@ -1,0 +1,179 @@
+.slider {
+  width: 100%;
+  min-height: 800px;
+ 
+  &__item {
+    position: relative;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    top: 22%;
+    left: 20%;
+    font-size: 60px;
+    line-height: 70px;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #333333;
+
+    span {
+      color: $hover-link;
+    }
+  }
+
+  &__desc {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-size: 16px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 121px;
+    height: 37px;
+    color: #333333;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    border-top: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-bottom: 2px solid #333333;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+
+    &:hover {
+      color: $hover-link;
+      text-decoration: none;
+    }
+
+    &:focus {
+      outline: none;
+      text-decoration: none;
+      color: $hover-link;
+    }
+
+    &::after {
+      position: absolute;
+      top: 7%;
+      left: -4%;
+      z-index: 10;
+      content: "";
+      width: 10px;
+      background-color: #333333;
+      border: 1px solid #333333;
+      transform: rotate(90deg);
+    }
+    &::before {
+      position: absolute;
+      top: 88%;
+      left: -4%;
+      z-index: 10;
+      content: "";
+      width: 10px;
+      background-color: #333333;
+      border: 1px solid #333333;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+img {
+  width: 100%;
+  background-size: contain;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+  font-size: 25px;
+  background-color: #333333;
+  color: $link-color;
+  border: 1px solid #333333;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+}
+
+.prev-arrow {
+  top: 50%;
+  left: 50px;
+
+  &:hover {
+    background-color: $hover-link;
+    color: $link-color;
+    border: 1px solid $link-color;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.next-arrow {
+  top: 50%;
+  right: 50px;
+  padding-right: 4px;
+  
+  &:hover {
+    background-color: $hover-link;
+    color: $link-color;
+    border: 1px solid $link-color;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.slick-dots {
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-right: 20px;
+
+    button {
+      cursor: pointer;
+      width: 15px;
+      height: 15px;
+      font-size: 0;
+      border-radius: 50%;
+      background-color: #000;
+      border: 1px solid #000;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .slick-active {
+    button {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      z-index: 10;
+      border: 1px solid $hover-link;
+      background-color: $hover-link;
+    }
+  }
+}
