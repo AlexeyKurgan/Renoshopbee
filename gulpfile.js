@@ -70,6 +70,4 @@ gulp.task('images', function () {
         .pipe(gulp.dest("dist/img"));
 });
 
-
-// gulp.task('default', gulp.parallel('watch', 'server', 'styles','scripts','fonts','html','icons','images'));
 gulp.task('default', gulp.parallel('watch', 'server', 'styles','scripts','fonts','fileinclude','html','icons','images'));
