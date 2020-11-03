@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- include font "Poppins" medium -->
+    <!-- include fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- include cdn slick slider -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" />
     <!-- include font awesome -->
@@ -22,14 +23,102 @@
     <!-- start header section -->
     @@include('layouts/header.html')
     <!-- end header section -->
+    <main class="main">
+        <section class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">Home</li>
+                    <li class="breadcrumbs__item">Page</li>
+                    <li class="breadcrumbs__item">Shop</li>
+                    <li class="breadcrumbs__item breadcrumbs__item_active">Product</li>
+                </ul>
+            </div>
+        </section>
 
-    <section>
-        sdasdasdasd
-    </section>
+        <section class="product-wrap">
+            <div class="container">
+                <div class="product-about">
+                    <div class="product-about__column product-about__column_left">
+                        <div class="slider-for">
+                            <div class="product-about__image">
+                                <img src="img/cards1.jpg" alt="cards1">
+                            </div>
+                            <div class="product-about__image">
+                                <img src="img/cards2.jpg" alt="cards1">
+                            </div>
+                            <div class="product-about__image">
+                                <img src="img/cards3.jpg" alt="cards1">
+                            </div>
+                        </div>
 
+                        <div class="slider-nav">
+                            <div class="product-about__image">
+                                <img src="img/cards1.jpg" alt="cards1">
+                            </div>
+                            <div class="product-about__image">
+                                <img src="img/cards2.jpg" alt="cards2">
+                            </div>
+                            <div class="product-about__image">
+                                <img src="img/cards3.jpg" alt="cards3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-about__column product-about__column_right">
+                        <div class="product-about__content">
+                            <h3 class="product-about__title">This is product name</h3>
+
+                            <div class="product-about__inner">
+                                <div class="product-about__price"><span>$</span>250.00</div>
+                                <ul class="product-about__rating">
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="far fa-star"></li>
+                                </ul>
+                            </div>
+
+                            <div class="product-about__desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</br>
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</br>
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</br>
+                                consequat.
+                            </div>
+
+                            <form action="" class="product-about__form">
+                                <select class="product-about__size" name="" id="">
+                                    <option>Пункт 1</option>
+                                    <option>Пункт 2</option>
+                                    <option>Пункт 3</option>
+                                </select>
+
+                                <select class="product-about__color" name="" id="">
+                                    <option><a href="#">1</a></option>
+                                    <option><a href="#">2</a></option>
+                                    <option><a href="#">3</a></option>
+                                </select>
+
+                                <div class="product-about__counter">
+                                    <button>-</button>
+                                    <input type="text" id="" name="" value="1" min="0" readonly autocomplete="off">
+                                    <button>+</button>
+                                </div>
+
+                                <div class="product-about__buttons">
+                                    <input type="submit" value="add to cart">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <!-- start footer section -->
     @@include('layouts/footer.html')
     <!-- end footer section -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/slickSlider.js"></script>
 </body>
 
 </html>
