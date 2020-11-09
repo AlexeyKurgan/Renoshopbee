@@ -1,28 +1,27 @@
-
-.product{
-  border:1px solid red;
+.product {
+  border: 1px solid red;
 
   &-about {
     display: flex;
-  
+
     &__column {
       width: 50%;
       &_left {
         max-width: 450px;
       }
-  
+
       &_right {
         min-width: 644px;
         margin-left: 50px;
       }
     }
-  
+
     &__inner {
       display: flex;
       align-items: center;
       padding-bottom: 37px;
     }
-  
+
     &__title {
       font-family: Poppins, sans-serif;
       font-weight: 600;
@@ -33,7 +32,7 @@
       padding-bottom: 19px;
       padding-top: 20px;
     }
-  
+
     &__price {
       font-family: "Droid Serif", sans-serif;
       letter-spacing: 1px;
@@ -41,19 +40,19 @@
       margin-right: 15px;
       color: $hover-link;
     }
-  
+
     &__rating {
       font-size: 14px;
       list-style: none;
       padding: 0;
       margin: 0;
-  
+
       li {
         cursor: pointer;
         color: #ff9600;
       }
     }
-  
+
     &__desc {
       font-family: "Roboto", sans-serif;
       font-size: 14px;
@@ -61,23 +60,23 @@
       padding-bottom: 53px;
       border-bottom: 1px solid #eeeeee;
     }
-  
+
     &__form {
       width: 100%;
       min-height: 355px;
     }
-  
+
     &__modification {
       display: flex;
       margin-bottom: 30px;
     }
-  
+
     &__size {
       border: 1px solid #eeeeee;
       padding: 15px 17px;
       min-width: 296px;
     }
-  
+
     &__color {
       display: flex;
       align-items: center;
@@ -85,11 +84,11 @@
       margin-left: 30px;
       position: relative;
       border: 1px solid #eeeeee;
-  
+
       span {
         padding-left: 20px;
       }
-  
+
       &-list {
         display: flex;
         align-items: flex-end;
@@ -99,12 +98,12 @@
         right: 0;
         top: 0;
         min-height: 30px;
-  
+
         &:hover > li,
         &:hover li:last-child {
           display: block;
         }
-  
+
         li {
           width: 30px;
           height: 30px;
@@ -113,7 +112,7 @@
           padding: 0;
           margin-bottom: 10px;
           cursor: pointer;
-  
+
           & + li {
             display: none;
             background-color: red;
@@ -125,11 +124,11 @@
         }
       }
     }
-  
+
     &__counter {
       display: flex;
       margin-bottom: 30px;
-  
+
       &-btn {
         display: flex;
         justify-content: center;
@@ -146,7 +145,7 @@
         padding: 5px 30px;
         border: 1px solid #f5f6f9;
       }
-  
+
       &-number {
         text-align: center;
         width: 152px;
@@ -154,7 +153,7 @@
         padding: 15px 0px;
       }
     }
-  
+
     &__trade {
       &-cart {
         padding: 13px 18px;
@@ -165,12 +164,12 @@
         border: 1px solid $hover-link;
         cursor: pointer;
         transition: linear all 0.2s;
-  
+
         &:hover {
           transition: linear all 0.2s;
           box-shadow: 0px 0px 10px 1px #c6c6c7;
         }
-  
+
         span {
           font-family: "Poppins", sans-serif;
           text-transform: uppercase;
@@ -185,7 +184,7 @@
         background-color: transparent;
         padding: 13px 18px;
         cursor: pointer;
-  
+
         &:hover i {
           transition: linear all 0.2s;
           color: $hover-link;
@@ -194,35 +193,45 @@
     }
   }
 
-  &__tabs-container{
+  &__tabs {
     width: 100%;
-    padding: 80px 30px 96px 30px;
-    padding-top: 80px;
-    border:1px solid black;
+    padding: 66px 0 49px 0;
+    border: 1px solid black;
 
-    &-title{
-      position: relative;
-      border:1px solid red;
-      // display: flex;
+    &-inner {
+      display: flex;
     }
 
-    &-desc{
-      border:1px solid red;
+    &-links {
+      display: block;
+      border: none;
+      outline: none;
+      padding: 0;
+      margin: 0;
+      padding-top: 20px;
+      padding-bottom: 11px;
+      padding-left: 21px;
+      padding-right: 43px;
+      background-color: #f5f6f9;
+      &:last-child {
+        background-color: transparent;
+      }
     }
-
-    &-reviews{
-      border:1px solid black;
-    }
-
-    .content-1{
-      border:1px solid yellow;
-      // position: absolute;
-      // left: 0;
-      // top: 0;
+    &-content {
+      font-size: 14px;
+      line-height: 24px;
+      padding-top: 26px;
+      padding-left: 32px;
+      padding-right: 32px;
+      padding-bottom: 48px;
+      background-color: #f5f6f9;
+      &:last-child {
+        display: none;
+        background-color: transparent;
+      }
     }
   }
 }
-
 
 .slider-for {
   width: 100%;

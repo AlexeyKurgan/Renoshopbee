@@ -36,7 +36,6 @@
         </section>
 
         <section class="product">
-
             <div class="container">
                 <div class="product-about">
                     <div class="product-about__column product-about__column_left">
@@ -169,26 +168,37 @@
                             </form>
                         </div>
                     </div>
-                    
                 </div>
-                <div class="product__tabs-container">
-                    <div class="tab">
-                        <button class="tablinks">Description</button>
-                        <button class="tablinks">Reviews (2)</button>
+                <div class="product__tabs">
+                    <div class="product__tabs-inner">
+                        <button class="product__tabs-links">Description</button>
+                        <button class="product__tabs-links">Reviews (2)</button>
                     </div>
 
-                    <div id="description" class="tabcontent">
+                    <div id="description" class="product__tabs-content">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                     </div>
-                    <div id="reviews" class="tabcontent">
+                    <div id="reviews" class="product__tabs-content">
                         <div class="reviews-for">
                             <span class="revies-for__top-text">1 reviews for Etiam tristique nisl</span>
                             <div class="user-review">
@@ -200,7 +210,7 @@
                                             <li class="fas fa-star"></li>
                                             <li class="fas fa-star"></li>
                                             <li class="fas fa-star"></li>
-                                            <li class="far fa-star"></li>
+                                            <!-- <li class="far fa-star"></li> -->
                                         </div>
                                         <div class="user-review__right-date">Jun 3,2017</div>
                                     </div>
@@ -217,14 +227,258 @@
                         </div>
                         <div class="reviews__add">
                             <form action="">
-                                <input type="text">
+                                <div class="reviews__add-top">
+                                    <legend>Add a review</legend>
+                                    <input type="text" placeholder="Your name ...">
+                                    <input type="email" placeholder="Your e-mail ...">
+                                </div>
+                                <div class="reviews__add-middle">
+                                    <ul class="rating-stars">
+                                        <li class="rating-stars__item">
+                                            <i class="far fa-star"></i>
+                                        </li>
+                                        <li class="rating-stars__item">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </li>
+                                        <li class="rating-stars__item">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </li>
+                                        <li class="rating-stars__item">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </li>
+                                        <li class="rating-stars__item">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="reviews__add-bottom">
+                                    <textarea formcontrolname="text" name="text" required="" cols="75"
+                                        rows="5"></textarea>
+                                    <input type="submit" value="SUBMIT">
+                                </div>
                             </form>
-                            <div class="reviews__add-top"></div>
-                            <div class="reviews__add-top"></div>
-                            <div class="reviews__add-top"></div>
                         </div>
                     </div>
-                   
+
+                </div>
+            </div>
+        </section>
+        <section class="related-products">
+            <div class="container">
+                <div class="related-products__header-wrap">
+                    <span>Related Products</span>
+                </div>
+
+                <div class="related-products__slider">
+                    <ul class="related-products__slider-list">
+                        <li class="related-products__slider-item">
+                            <div class="related-products__slider-img" href="#">
+                                <a href="shop-products-name.html"><img src="img/cards1.jpg" alt="product 1"></a>
+                                <ul class="related-products__slider-social">
+                                    <li>
+                                        <a href="" data-tip="add to cart"><i class="fas fa-shopping-cart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" data-tip=""><i class="fas fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" data-tip=""><i class="fas fa-retweet"></i></a>
+                                    </li>
+                                </ul>
+
+                                <span class="related-products__slider-new-label">new</span>
+                            </div>
+
+                            <div class="related-products__slider-content">
+                                <h3 class="related-products__slider-title"><a href="#">Cruise Dual Analog</a></h3>
+                                <div class="related-products__slider-price"><span>$</span>250.00</div>
+
+                                <ul class="related-products__slider-rating">
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="far fa-star"></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="related-products__slider-list">
+                        <li class="related-products__slider-item">
+                            <div class="related-products__slider-img" href="#">
+                                <a href="shop-products-name.html"><img src="img/cards1.jpg" alt="product 1"></a>
+                                <ul class="related-products__slider-social">
+                                    <li>
+                                        <a href="" data-tip="add to cart"><i class="fas fa-shopping-cart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" data-tip=""><i class="fas fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" data-tip=""><i class="fas fa-retweet"></i></a>
+                                    </li>
+                                </ul>
+
+                                <span class="related-products__slider-new-label">new</span>
+                            </div>
+
+                            <div class="related-products__slider-content">
+                                <h3 class="related-products__slider-title"><a href="#">Cruise Dual Analog</a></h3>
+                                <div class="related-products__slider-price"><span>$</span>250.00</div>
+
+                                <ul class="related-products__slider-rating">
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="far fa-star"></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="related-products__slider-list">
+                        <li class="related-products__slider-item">
+                            <div class="related-products__slider-img" href="#">
+                                <a href="shop-products-name.html"><img src="img/cards1.jpg" alt="product 1"></a>
+                                <ul class="related-products__slider-social">
+                                    <li>
+                                        <a href="" data-tip="add to cart"><i class="fas fa-shopping-cart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" data-tip=""><i class="fas fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" data-tip=""><i class="fas fa-retweet"></i></a>
+                                    </li>
+                                </ul>
+
+                                <span class="related-products__slider-new-label">new</span>
+                            </div>
+
+                            <div class="related-products__slider-content">
+                                <h3 class="related-products__slider-title"><a href="#">Cruise Dual Analog</a></h3>
+                                <div class="related-products__slider-price"><span>$</span>250.00</div>
+
+                                <ul class="related-products__slider-rating">
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="far fa-star"></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="related-products__slider-list">
+                        <li class="related-products__slider-item">
+                            <div class="related-products__slider-img" href="#">
+                                <a href="shop-products-name.html"><img src="img/cards1.jpg" alt="product 1"></a>
+                                <ul class="related-products__slider-social">
+                                    <li>
+                                        <a href="" data-tip="add to cart"><i class="fas fa-shopping-cart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" data-tip=""><i class="fas fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" data-tip=""><i class="fas fa-retweet"></i></a>
+                                    </li>
+                                </ul>
+
+                                <span class="related-products__slider-new-label">new</span>
+                            </div>
+
+                            <div class="related-products__slider-content">
+                                <h3 class="related-products__slider-title"><a href="#">Cruise Dual Analog</a></h3>
+                                <div class="related-products__slider-price"><span>$</span>250.00</div>
+
+                                <ul class="related-products__slider-rating">
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="far fa-star"></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="related-products__slider-list">
+                        <li class="related-products__slider-item">
+                            <div class="related-products__slider-img" href="#">
+                                <a href="shop-products-name.html"><img src="img/cards1.jpg" alt="product 1"></a>
+                                <ul class="related-products__slider-social">
+                                    <li>
+                                        <a href="" data-tip="add to cart"><i class="fas fa-shopping-cart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" data-tip=""><i class="fas fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" data-tip=""><i class="fas fa-retweet"></i></a>
+                                    </li>
+                                </ul>
+
+                                <span class="related-products__slider-new-label">new</span>
+                            </div>
+
+                            <div class="related-products__slider-content">
+                                <h3 class="related-products__slider-title"><a href="#">Cruise Dual Analog</a></h3>
+                                <div class="related-products__slider-price"><span>$</span>250.00</div>
+
+                                <ul class="related-products__slider-rating">
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="far fa-star"></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="related-products__slider-list">
+                        <li class="related-products__slider-item">
+
+                            <div class="related-products__slider-img" href="#">
+                                <a href="shop-products-name.html"><img src="img/cards1.jpg" alt="product 1"></a>
+                                <ul class="related-products__slider-social">
+                                    <li>
+                                        <a href="" data-tip="add to cart"><i class="fas fa-shopping-cart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" data-tip=""><i class="fas fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" data-tip=""><i class="fas fa-retweet"></i></a>
+                                    </li>
+                                </ul>
+
+                                <span class="related-products__slider-new-label">new</span>
+                            </div>
+
+                            <div class="related-products__slider-content">
+                                <h3 class="related-products__slider-title"><a href="#">Cruise Dual Analog</a></h3>
+                                <div class="related-products__slider-price"><span>$</span>250.00</div>
+
+                                <ul class="related-products__slider-rating">
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="far fa-star"></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>

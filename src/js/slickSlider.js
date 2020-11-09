@@ -17,11 +17,11 @@ $(document).ready(function(){
         slidesToScroll: 1,
         arrows:false,
         asNavFor: '.slider-nav',
-        // infinite:true,
+        infinite:true,
         centerPadding:'50px',
         autoplaySpeed:1500,
-        // autoplay:true,
-        // speed: 1200,
+        autoplay:true,
+        speed: 1200,
        
       });
 
@@ -30,6 +30,15 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         asNavFor: '.slider-for',
+        arrows: true,
+        prevArrow: '<button id="prev" type="button" class="prev-arrow"><i class="fas fa-angle-double-left"></i></button>',
+        nextArrow: '<button id="next" type="button" class="next-arrow"><i class="fas fa-angle-double-right"></i></button>'
+      });
+
+      $('.related-products__slider').slick({
+        // infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
         arrows: true,
         prevArrow: '<button id="prev" type="button" class="prev-arrow"><i class="fas fa-angle-double-left"></i></button>',
         nextArrow: '<button id="next" type="button" class="next-arrow"><i class="fas fa-angle-double-right"></i></button>'
